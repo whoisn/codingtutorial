@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <link rel="stylesheet" href="styles.css">
+     <style>
+ 
+
+
+.my-courses {
+    margin-top: 5rem;
+}
+
+.my-courses h2 {
+    font-size: 2rem;
+    color: #f1c40f; /* Gold color */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Layout */
+.courses-layout {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Courses List */
+.courses-list {
+    flex: 2;
+}
+
+.course-item {
+    background-color: #262832; /* Darker card background */
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.course-item:hover {
+    transform: translateY(-5px);
+}
+
+.course-icon {
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.course-details h3 {
+    color: #f1c40f; /* Gold color */
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.course-details p {
+    font-size: 0.9rem;
+    color: #c5c7c9; /* Light gray */
+    margin: 5px 0 0;
+}
+
+.rating {
+    color: #e1b50e; /* Bright gold */
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.btn {
+    background-color: #f1c40f; /* Gold button */
+    color: #262832; /* Dark text on button */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e1b50e;
+}
+
+/* Profile Sidebar */
+.profile-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.profile-card {
+    background-color: #262832;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.profile-card h4 {
+    color: #f1c40f;
+    margin: 0;
+}
+
+.position {
+    color: #c5c7c9;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.stats div {
+    color: #f1c40f; /* Gold color for stats */
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+/* Notification Widget */
+.notification {
+    background-color: #262832;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.notification:hover {
+    transform: translateY(-5px);
+}
+
+.message {
+    color: #c5c7c9;
+}
+
+.time {
+    font-size: 0.8rem;
+    color: #e1b50e;
+    text-align: right;
+}
+.zoom-in {
+    transform: scale(0.8);
+    opacity: 0;
+    animation: zoomInEffect 1.2s ease forwards;
+  }
+  
+  @keyframes zoomInEffect {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+     </style>
+</head>
+<body>
+
+
+     <!-- Navbar -->
+     <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Coding Guide.</a>
+            <ul class="nav-links">
+                <li><a href="#services">Courses</a></li>
+                <li><a href="#skills">Challenges</a></li>
+                <li><a href="portfolio.php">Resources</a></li>
+                <li><a href="#footer-contact">Track</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- My Courses Section -->
+    <div class="main-content zoom-in">
+    <section class="my-courses container">
+        <h2>My Courses</h2>
+        <div class="courses-layout">
+            <!-- Courses List -->
+            <div class="courses-list">
+                <!-- Repeat this course-item block for each course -->
+                <div class="course-item">
+                    <img src="img/course-icon1.png" alt="Course Icon" class="course-icon">
+                    <div class="course-details">
+                        <h3>Intro in Java Programming</h3>
+                        <p>Feb 4, 2020 - Feb 22, 2020</p>
+                    </div>
+                    <span class="rating">🔥 8.7</span>
+                    <button class="btn view-course">View Course</button>
+                </div>
+
+                <div class="course-item">
+                    <img src="img/course-icon2.png" alt="Course Icon" class="course-icon">
+                    <div class="course-details">
+                        <h3>Intro in Python Programming</h3>
+                        <p>Jan 1, 2020 - Jan 30, 2020</p>
+                    </div>
+                    <span class="rating">🔥 9.2</span>
+                    <button class="btn view-course">View Course</button>
+                </div>
+                <div class="course-item">
+                    <img src="img/course-icon2.png" alt="Course Icon" class="course-icon">
+                    <div class="course-details">
+                        <h3>OOP for Java</h3>
+                        <p>Jan 1, 2020 - Jan 30, 2020</p>
+                    </div>
+                    <span class="rating">🔥 9.2</span>
+                    <button class="btn view-course">View Course</button>
+                </div>
+                <div class="course-item">
+                    <img src="img/course-icon2.png" alt="Course Icon" class="course-icon">
+                    <div class="course-details">
+                        <h3>Basic Scripting for Python</h3>
+                        <p>Jan 1, 2020 - Jan 30, 2020</p>
+                    </div>
+                    <span class="rating">🔥 9.2</span>
+                    <button class="btn view-course">View Course</button>
+                </div>
+                <div class="course-item">
+                    <img src="img/course-icon2.png" alt="Course Icon" class="course-icon">
+                    <div class="course-details">
+                        <h3>Python Full Courses</h3>
+                        <p>Jan 1, 2020 - Jan 30, 2020</p>
+                    </div>
+                    <span class="rating">🔥 9.2</span>
+                    <button class="btn view-course">View Course</button>
+                </div>
+                <!-- End course-item block -->
+            </div>
+            
+            <!-- Profile Sidebar -->
+            <aside class="profile-sidebar">
+                <div class="profile-card">
+                    <img src="img/profile-picture.png" alt="Profile Picture" class="profile-pic">
+                    <h4>John Doe</h4>
+                    <p class="position">Computer Science Student</p>
+                    <div class="stats">
+                        <div><span>16</span> Courses Completed</div>
+                        <div><span>14</span> Certificates Earned</div>
+                        <div><span>120</span> Total Hours</div>
+                        <div><span>8.9</span> Average Score</div>
+                    </div>
+                </div>
+
+                <!-- Chat/Notification Widget -->
+                <div class="notification">
+                    <div class="message">
+                        <p>Hey, Yosef! Did you get the grape juice out?</p>
+                        <span class="time">2 min ago</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

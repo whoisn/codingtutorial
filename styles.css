@@ -1,0 +1,70 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #c5c7c9;
+    background-color: #1e1f29;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #262832;
+    padding: 1rem 0;
+    color: #c5c7c9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+  
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+  
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f1c40f;
+    text-decoration: none;
+}
+  
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+  
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #c5c7c9;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+  
+.navbar .nav-links li a:hover {
+    color: #f1c40f;
+}
+
